@@ -6,12 +6,10 @@ public class StatsService {
         for (long sale : sales) {
             sum += sale;
         }
-        System.out.println(sum);
         return sum;
     }
 
     public int calculateAverageSales(long[] sales) {
-        System.out.println(calculateSum(sales) / sales.length);
         return calculateSum(sales) / sales.length;
     }
 
@@ -24,7 +22,6 @@ public class StatsService {
             }
             month = month + 1;
         }
-        System.out.println(minMonth + 1);
         return minMonth + 1;
     }
 
@@ -37,7 +34,6 @@ public class StatsService {
             }
             month = month + 1;
         }
-        System.out.println(maxMonth + 1);
         return maxMonth + 1;
     }
 
@@ -50,7 +46,6 @@ public class StatsService {
                 month = month + 1;
             }
         }
-        System.out.println(month);
         return (int) month;
     }
 
@@ -62,7 +57,6 @@ public class StatsService {
                 month = month + 1;
             }
         }
-        System.out.println(month);
         return (int) month;
     }
 
